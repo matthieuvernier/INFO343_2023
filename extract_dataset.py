@@ -1,5 +1,4 @@
 
-
 #!pip install elasticsearch==7.16.3
 import elasticsearch
 
@@ -10,17 +9,17 @@ from pandasql import sqldf
 #Parametros de conexion al motor de búsqueda Sophia
 IP = "search.sophia2.org"
 PORT = 9200
-USER= "elastic_reader"
-PASS= "1QpbX5Yd"
+USER= ""
+PASS= ""
 
 #Parametros de la busqueda
 country="chile"
-from_="2018-07-01"
-to_="2018-12-31"
+from_="2018-01-01"
+to_="2023-12-31"
 media_outlets=["emol","cnnchile","lanacion","elciudadano","elmostrador","ciper","latercera","eldinamo",
 "ahoranoticiasmega"]
 
-keyword="ley"
+keyword="incendios forestales"
 simple_keyword=False
 
 #Conexión a Sophia y búsqueda
